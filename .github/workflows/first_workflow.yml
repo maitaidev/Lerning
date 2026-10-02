@@ -1,9 +1,11 @@
 name: first_workflow
 on: [push]
 jobs:
-    runfirst_command:
-        runs-on: ubuntu-latest
-        steps: 
-            - name: Display Some Text
-              run: echo "Some Text"
+  runfirst_command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Display Some Text
+        run: echo "Some Text"
+      - name: Display node version
+        run: node -v
 
