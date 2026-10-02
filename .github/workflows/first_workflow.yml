@@ -8,4 +8,6 @@ jobs:
         run: echo "Some Text"
       - name: Display node version
         run: node -v
+      - name: Display npm version
+        run: npm -v
 
