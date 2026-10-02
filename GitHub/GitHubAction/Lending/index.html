@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus — Work Smarter</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-logo">Nexus</div>
+        <ul class="nav-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+        <div class="nav-actions">
+            <button class="btn-ghost" onclick="openModal()">Log in</button>
+            <button class="btn-primary" onclick="openModal()">Get Started</button>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-badge">Now in public beta</div>
+        <h1 class="hero-title">Build faster.<br>Ship smarter.<br><span>Stay in flow.</span></h1>
+        <p class="hero-subtitle">Nexus brings your tasks, docs, and team together in one seamless workspace. No more switching tabs, losing context, or dropping the ball.</p>
+        <div class="hero-cta">
+            <button class="btn-primary btn-large" onclick="openModal()">Start for free</button>
+            <button class="btn-ghost btn-large">Watch demo ▶</button>
+        </div>
+        <p class="hero-note">No credit card required · Free forever plan available</p>
+        <div class="hero-visual">
+            <div class="dashboard-mock">
+                <div class="mock-sidebar">
+                    <div class="mock-item active"></div>
+                    <div class="mock-item"></div>
+                    <div class="mock-item"></div>
+                    <div class="mock-item"></div>
+                </div>
+                <div class="mock-main">
+                    <div class="mock-header"></div>
+                    <div class="mock-card"></div>
+                    <div class="mock-card short"></div>
+                    <div class="mock-card"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features" id="features">
+        <p class="section-label">Why Nexus</p>
+        <h2 class="section-title">Everything your team needs</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>Lightning Fast</h3>
+                <p>Built on a real-time sync engine. Every change lands instantly across your whole team.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔒</div>
+                <h3>Secure by Default</h3>
+                <p>End-to-end encryption, SSO support, and granular permissions keep your data safe.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🧩</div>
+                <h3>100+ Integrations</h3>
+                <p>Connect GitHub, Slack, Figma, Jira, and anything else your workflow depends on.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📊</div>
+                <h3>Smart Analytics</h3>
+                <p>Understand your team's velocity with dashboards that surface what actually matters.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🤖</div>
+                <h3>AI Copilot</h3>
+                <p>Summarize threads, auto-assign tasks, and generate docs — without leaving your workspace.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🌍</div>
+                <h3>Works Anywhere</h3>
+                <p>Native apps for Mac, Windows, iOS, and Android. Full offline support included.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="pricing" id="pricing">
+        <p class="section-label">Pricing</p>
+        <h2 class="section-title">Simple, honest pricing</h2>
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <h3>Free</h3>
+                <div class="price">$0 <span>/mo</span></div>
+                <ul>
+                    <li>Up to 5 members</li>
+                    <li>5 GB storage</li>
+                    <li>Core features</li>
+                    <li>Community support</li>
+                </ul>
+                <button class="btn-ghost btn-full" onclick="openModal()">Get started</button>
+            </div>
+            <div class="pricing-card featured">
+                <div class="pricing-badge">Most popular</div>
+                <h3>Pro</h3>
+                <div class="price">$12 <span>/mo per seat</span></div>
+                <ul>
+                    <li>Unlimited members</li>
+                    <li>100 GB storage</li>
+                    <li>AI Copilot included</li>
+                    <li>Priority support</li>
+                </ul>
+                <button class="btn-primary btn-full" onclick="openModal()">Start free trial</button>
+            </div>
+            <div class="pricing-card">
+                <h3>Enterprise</h3>
+                <div class="price">Custom</div>
+                <ul>
+                    <li>SSO & SCIM</li>
+                    <li>Unlimited storage</li>
+                    <li>Dedicated SLA</li>
+                    <li>Custom contracts</li>
+                </ul>
+                <button class="btn-ghost btn-full">Contact sales</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOCIAL PROOF -->
+    <section class="social-proof">
+        <p class="section-label">Trusted by teams worldwide</p>
+        <div class="logos-row">
+            <span class="logo-pill">Acme Corp</span>
+            <span class="logo-pill">Stripe</span>
+            <span class="logo-pill">Linear</span>
+            <span class="logo-pill">Vercel</span>
+            <span class="logo-pill">Notion</span>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="about">
+        <div class="footer-brand">
+            <div class="nav-logo">Nexus</div>
+            <p>Built for teams who care about craft.</p>
+        </div>
+        <div class="footer-links">
+            <div>
+                <h4>Product</h4>
+                <a href="#">Features</a>
+                <a href="#">Pricing</a>
+                <a href="#">Changelog</a>
+            </div>
+            <div>
+                <h4>Company</h4>
+                <a href="#">About</a>
+                <a href="#">Blog</a>
+                <a href="#">Careers</a>
+            </div>
+            <div>
+                <h4>Legal</h4>
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Security</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- LOGIN MODAL -->
+    <div class="modal-overlay" id="modal" onclick="closeModalOutside(event)">
+        <div class="modal">
+            <button class="modal-close" onclick="closeModal()">✕</button>
+            <div class="modal-tabs">
+                <button class="tab active" onclick="switchTab('login', this)">Log in</button>
+                <button class="tab" onclick="switchTab('signup', this)">Sign up</button>
+            </div>
+
+            <div id="tab-login">
+                <h2>Welcome back</h2>
+                <p class="modal-sub">Don't have an account? <a href="#" onclick="switchTabByName('signup')">Sign up free</a></p>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" placeholder="you@company.com">
+                </div>
+                <div class="form-group">
+                    <label>Password <a href="#" class="label-link">Forgot?</a></label>
+                    <input type="password" placeholder="••••••••">
+                </div>
+                <button class="btn-primary btn-full btn-large">Log in</button>
+                <div class="divider"><span>or</span></div>
+                <button class="btn-social">
+                    <svg width="18" height="18" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+                    Continue with Google
+                </button>
+            </div>
+
+            <div id="tab-signup" style="display:none">
+                <h2>Create your account</h2>
+                <p class="modal-sub">Already have one? <a href="#" onclick="switchTabByName('login')">Log in</a></p>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>First name</label>
+                        <input type="text" placeholder="Alex">
+                    </div>
+                    <div class="form-group">
+                        <label>Last name</label>
+                        <input type="text" placeholder="Johnson">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Work email</label>
+                    <input type="email" placeholder="you@company.com">
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" placeholder="Min. 8 characters">
+                </div>
+                <button class="btn-primary btn-full btn-large">Create account</button>
+                <div class="divider"><span>or</span></div>
+                <button class="btn-social">
+                    <svg width="18" height="18" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+                    Continue with Google
+                </button>
+                <p class="modal-terms">By signing up you agree to our <a href="#">Terms</a> and <a href="#">Privacy Policy</a>.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openModal() {
+            document.getElementById('modal').classList.add('open');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeModal() {
+            document.getElementById('modal').classList.remove('open');
+            document.body.style.overflow = '';
+        }
+        function closeModalOutside(e) {
+            if (e.target === document.getElementById('modal')) closeModal();
+        }
+        function switchTab(name, btn) {
+            document.getElementById('tab-login').style.display = name === 'login' ? '' : 'none';
+            document.getElementById('tab-signup').style.display = name === 'signup' ? '' : 'none';
+            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+            btn.classList.add('active');
+        }
+        function switchTabByName(name) {
+            const idx = name === 'login' ? 0 : 1;
+            switchTab(name, document.querySelectorAll('.tab')[idx]);
+        }
+        document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+    </script>
+</body>
+</html>
