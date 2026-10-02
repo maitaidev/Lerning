@@ -15,4 +15,7 @@ jobs:
       - name: Run tests
         run: npm test 
         working-directory: GitHub/GitHubAction/Lending
+      - name: Run build
+        run: npm run build
+        working-directory: GitHub/GitHubAction/Lending
 
