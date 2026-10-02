@@ -1,8 +1,0 @@
-name: first_workflow
-on: [push]
-jobs:
-    run-first-copmmand:
-        runs-on: ubuntu-latest
-        steps:
-            - name: display some text
-              run: echo "Hello World"
