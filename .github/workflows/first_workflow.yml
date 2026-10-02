@@ -1,10 +1,11 @@
 name: first_workflow
 on: [push]
 jobs:
-    runfirst_command:
-        runs-on: ubuntu-latest
-        steps:
-            - name: checkout code
-              uses: actions/checkout@v4
-            - name: Install dependencies1
-              run: npm install  
+  runfirst_command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v4
+      - name: Install dependencies1
+        run: npm install
+        working-directory: GitHub/GitHubAction/Lending
