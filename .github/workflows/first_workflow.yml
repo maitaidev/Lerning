@@ -9,3 +9,6 @@ jobs:
       - name: Install dependencies1
         run: npm install
         working-directory: GitHub/GitHubAction/Lending
+      - name: Run lint
+        run: npm run lint
+        working-directory: GitHub/GitHubAction/Lending

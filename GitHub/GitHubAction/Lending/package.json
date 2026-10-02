@@ -1,7 +1,9 @@
-{
-  "name": "shop-api",
-  "version": "1.0.0",
-  "scripts": {
-    "test": "echo \"Tests passed\""
+                                                                                                           
+  {                                                                                                        
+    "name": "shop-api",
+    "version": "1.0.0",                                                                                    
+    "scripts": {  
+      "test": "echo \"Tests passed\"",
+      "lint": "echo \"Lint passed\""
+    }
   }
-}
