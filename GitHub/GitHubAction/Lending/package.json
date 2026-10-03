@@ -2,6 +2,7 @@
   "name": "shop-api",
   "version": "1.0.0",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Tests passed\"",
     "lint": "echo \"Lint passed\"",
     "build": "echo \"Build passed\""

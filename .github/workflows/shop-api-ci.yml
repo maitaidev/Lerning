@@ -1,7 +1,10 @@
-name: first_workflow
-on: [push]
+name: Shop API CI
+on:
+  pull_request:
+    branches:
+      - main
 jobs:
-  runfirst_command:
+  ci:
     runs-on: ubuntu-latest
     steps:
       - name: checkout code
@@ -13,9 +16,8 @@ jobs:
         run: npm run lint
         working-directory: GitHub/GitHubAction/Lending
       - name: Run tests
-        run: npm test 
+        run: npm test
         working-directory: GitHub/GitHubAction/Lending
       - name: Run build
         run: npm run build
         working-directory: GitHub/GitHubAction/Lending
-
