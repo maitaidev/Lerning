@@ -1,10 +1,10 @@
-name: first_workflow
+name: Shop API CI
 on:
   pull_request:
     branches:
       - main
 jobs:
-  runfirst_command:
+  ci:
     runs-on: ubuntu-latest
     steps:
       - name: checkout code

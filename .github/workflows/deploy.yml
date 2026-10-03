@@ -1,26 +1,26 @@
-name: Deploy2
+name: Deploy
 on:
-  push:
-    branches:
-      - main
+    push:
+        branches:
+            - main
 
 jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+    deploy:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v4
 
-      - name: Build Docker image
-        run: docker build -t shop-api .
-        working-directory: GitHub/GitHubAction/Lending
-      - name: Login to DockerHub
-        env:
-          DOCKER_USERNAME: "${{ secrets.DOCKER_USERNAME }}"
-          DOCKER_TOKEN: "${{ secrets.DOCKER_TOKEN }}"
-        run: echo "$DOCKER_TOKEN" | docker login -u "$DOCKER_USERNAME" --password-stdin
+            - name: Build Docker image
+              run: docker build -t shop-api .
+              working-directory: GitHub/GitHubAction/Lending
+            - name: Login to DockerHub
+              env:
+                  DOCKER_USERNAME: "${{ secrets.DOCKER_USERNAME }}"
+                  DOCKER_TOKEN: "${{ secrets.DOCKER_TOKEN }}"
+              run: echo "$DOCKER_TOKEN" | docker login -u "$DOCKER_USERNAME" --password-stdin
 
-      - name: Push Docker image
-        run: |
-          docker tag shop-api victorm13061987/shop-api:latest
-          docker push victorm13061987/shop-api:latest
+            - name: Push Docker image
+              run: |
+                  docker tag shop-api victorm13061987/shop-api:latest
+                  docker push victorm13061987/shop-api:latest
